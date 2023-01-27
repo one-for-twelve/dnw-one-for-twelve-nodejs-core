@@ -18,10 +18,9 @@
   },
   "license": "ISC",
   "scripts": {
-    "build": "npm run clean && ./scripts/build.js && npm run copy-files",
+    "build": "npm run clean && ./scripts/build.js",
     "copy-files": "npm run copy-resources && npm run build-types",
     "build-types": "tsc --emitDeclarationOnly --declaration",
-    "copy-resources": "cp ../../../resources/* ./lib",
     "deploy": "npm run build && npm publish",
     "uninstall": "rm -rf node_modules",
     "clean": "rm -rf lib tsconfig.tsbuildinfo"
