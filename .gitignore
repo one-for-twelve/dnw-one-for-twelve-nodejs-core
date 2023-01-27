@@ -37,11 +37,6 @@ tests/cases/**/*.js
 !tests/cases/docker/*.js/
 tests/cases/**/*.js.map
 *.config
-scripts/eslint/built/
-scripts/debug.bat
-scripts/run.bat
-scripts/**/*.js
-scripts/**/*.js.map
 coverage/
 internal/
 **/.DS_Store
