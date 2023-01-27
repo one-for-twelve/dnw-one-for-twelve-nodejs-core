@@ -1,0 +1,37 @@
+{
+  "name": "@dnw-one-for-twelve/game-core",
+  "version": "1.0.2",
+  "description": "One for twelve game core package",
+  "type": "module",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "./lib/index.js",
+    "./lib/index.d.ts",
+    "./lib/words.csv",
+    "./lib/words_unrevised.csv",
+    "./lib/questions.csv",
+    "./lib/questions_unrevised.csv"
+  ],
+  "directories": {
+    "dist": "lib"
+  },
+  "license": "ISC",
+  "scripts": {
+    "build": "npm run clean && ./scripts/build.js && npm run copy-files",
+    "copy-files": "npm run copy-resources && npm run build-types",
+    "build-types": "tsc --emitDeclarationOnly --declaration",
+    "copy-resources": "cp ../../../resources/* ./lib",
+    "deploy": "npm run build && npm publish",
+    "uninstall": "rm -rf node_modules",
+    "clean": "rm -rf lib tsconfig.tsbuildinfo"
+  },
+  "devDependencies": {
+    "@types/node": "^18.8.0",
+    "esbuild": "^0.15.10",
+    "esbuild-plugin-ts-references": "^0.2.0"
+  },
+  "dependencies": {
+    "fast-csv": "^4.3.6"
+  }
+}
