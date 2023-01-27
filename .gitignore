@@ -1,5 +1,10 @@
 node_modules/
 .node_modules/
+lib/
+src/*.d.ts
+src/*.d.ts.map
+src/*.js
+
 built/*
 tests/cases/rwc/*
 tests/cases/test262/*
@@ -29,12 +34,6 @@ rwc-report.html
 *.swp
 build.json
 *.actual
-lib/*.d.ts
-lib/*.d.ts.map
-lib/*.js
-src/*.d.ts
-src/*.d.ts.map
-src/*.js
 tests/webTestServer.js
 tests/webTestServer.js.map
 tests/webhost/*.d.ts

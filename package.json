@@ -18,8 +18,8 @@
   },
   "license": "ISC",
   "scripts": {
-    "build": "npm run clean && ./scripts/build.js",
-    "copy-files": "npm run copy-resources && npm run build-types",
+    "build": "npm run clean && ./scripts/build.js && npm run build-types && npm run copy-resources",
+    "copy-resources": "cp ./resources/* ./lib",
     "build-types": "tsc --emitDeclarationOnly --declaration",
     "deploy": "npm run build && npm publish",
     "uninstall": "rm -rf node_modules",
