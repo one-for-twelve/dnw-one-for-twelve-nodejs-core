@@ -1,6 +1,6 @@
 {
   "name": "@dnw-one-for-twelve/game-core",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "One for twelve game core package",
   "type": "module",
   "main": "./lib/index.js",
@@ -8,6 +8,8 @@
   "files": [
     "./lib/index.js",
     "./lib/index.d.ts",
+    "./lib/game_factory.d.ts",
+    "./lib/game_cache.d.ts",
     "./lib/words.csv",
     "./lib/words_unrevised.csv",
     "./lib/questions.csv",
